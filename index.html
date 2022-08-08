@@ -15,14 +15,14 @@
 <div class="navbar container">
     <img src="images/logo.svg" alt="Logo">
     <ul class="nav-list">
-        <li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Обо мне</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Связаться</a></li>
+        <li class="nav-item"><a href="#main" class="nav-link active">Главная</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Проекты</a></li>
+        <li class="nav-item"><a href="#developer" class="nav-link">Обо мне</a></li>
+        <li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
     </ul>
 </div> 
 <!-- /.navbar-->
-<header class="header container">
+<header class="header container" id="main">
 <img src="images/avatar1.png" alt="Аватар">
 <!-- /.header-photo-->
 <div class="header-text">
@@ -39,7 +39,7 @@
             <li class="social-item"><a href="#" class="social-link"><img src="images/Icons/stackoverflow.svg" alt="stackoverflow.svg" class="social-logo"></a></li>
             <li class="social-item"><a href="#" class="social-link"><img src="images/Icons/youtube.svg" alt="youtube.svg" class="social-logo"></a></li>
         </ul>
-        <a href="" class="cv-download" download>
+        <a href="cv.pdf" class="cv-download" download>
             <img src="images/Icons/download.svg" alt="download" class="cv-icon">
             <span class="cv-text">Скачать резюме</span>
         </a>
@@ -49,7 +49,7 @@
 <!-- /.header-text-->
 </header>
 <!-- /.header-->
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
     <div class="container">
         <h2 class="section-heading">Последние проекты</h2>
         <div class="cards">
@@ -105,7 +105,7 @@
     </div>
 </section>
 <!-- /.portfolio-->
-<section class="developer container">
+<section class="developer container" id="developer">
     <img src="images/developer-photo.jpg" alt="Ирина Озеркова" class="developer-photo" />
     <div class="developer-about">
     <span class="developer-hello">Рада вас видеть</span>
@@ -123,7 +123,7 @@ Figma, HTML, CSS, JavaScript, JQuery, PHP, MySQL и Wordpress
     <!-- /.developer-about --> 
 </section>
 <!-- /.developer container -->
-<section class="skills container">
+<section class="skills container" id="skills">
     <h2 class="skills-title">Работаю с разными языками и инструментами</h2>
     <ul class="tags">
         <li class="tags-item"><a href="#" class="tag">HTML</a></li>
@@ -138,9 +138,11 @@ Figma, HTML, CSS, JavaScript, JQuery, PHP, MySQL и Wordpress
     </ul>
 </section>
 <!-- /.skills -->
-<section class="feedback form-container">
-    <h2 class="feedback-title">Готова обсудить проект...</h2>
-    <form action="" class="form">
+<section class="feedback" id="feedback">
+    <img src="images/hand.png" alt="hand" class="feedback-hand">
+    <div class="form-container">
+        <h2 class="feedback-title">Готова обсудить проект...</h2>
+        <form action="" class="form">
         <div class="input-group">
             <label for="userName" class="input-label">Имя</label>
             <input id="userName" type="text" class="input">
@@ -160,7 +162,8 @@ Figma, HTML, CSS, JavaScript, JQuery, PHP, MySQL и Wordpress
             <img src="images/Icons/send.svg" alt="Отправить" class="send-icon">
             <span class="cv-text">Отправить</span>
         </button></div>
-    </form>
+        </form>
+    </div>
 </section>
 <!-- /.feedback -->
 </body>
